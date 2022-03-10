@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -178,8 +179,8 @@ public class GameClass {
 	
 	public void init_icons() {
 		//setting image for each player symbol
-		xSymbol = new ImageIcon("res/x.png");
-		oSymbol = new ImageIcon("res/o.png");
+		xSymbol = new ImageIcon("NaughtsAndCrossesEx/res/x.png");
+		oSymbol = new ImageIcon("NaughtsAndCrossesEx/res/o.png");
 		for(int i = 0; i < 9; i++) {
 			if(grid[i].getIcon() != null)
 				grid[i].setIcon(board[i] == 1? xSymbol:oSymbol);
